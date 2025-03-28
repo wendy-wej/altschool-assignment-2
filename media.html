@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Page</title>
+  </head>
+  <body>
+    <h1>My Story in Media</h1>
+
+    <h2>Responsive Image</h2>
+    <picture>
+      <source srcset="./media/profile_photo.png" media="(max-width: 600px)" />
+      <source srcset="./media/profile_photo.png" media="(max-width: 1024px)" />
+      <source srcset="./media/profile_photo.png" media="(min-width: 1025px)" />
+      <img src="./media/Wejiclo_logo.jpg" alt="A picture of myself" />
+    </picture>
+
+    <h2>Audio Message</h2>
+    <p>
+      This is one of my most played songs right now. It's called 'To Ashes and
+      Blood' by Woodkid and it is featured in Arcane season 2
+    </p>
+    <audio controls>
+      <source
+        src="./media/Woodkid - To Ashes and Blood (from Arcane Season 2) [Official Visualizer].mp3"
+        type="audio/mpeg"
+      />
+      <source src="message.ogg" type="audio/ogg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <!-- Iframe (Embedding a YouTube Video) -->
+    <h2>Inspiration that Drives Me</h2>
+    <p>
+      I really love Youtube videos that intersect between cinematographic shots
+      and visual poetry. This video below is one of my favorite videos on
+      Youtube from a creator I really admire.
+    </p>
+    <iframe
+      width="600"
+      height="350"
+      src="https://www.youtube.com/embed/yrVMeKiC2Nc"
+      title="Inspirational Video"
+      allowfullscreen
+    ></iframe>
+
+    <p>
+      <a href="index.html">Back to Home</a> |
+      <a href="table.html">Table</a>
+    </p>
+  </body>
+</html>
